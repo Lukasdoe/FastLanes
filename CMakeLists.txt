@@ -35,6 +35,27 @@ FetchContent_MakeAvailable(googletest)
 include_directories(fls_generated/include)
 #[[===================================================================================================================]]
 # FLS Benchmark: -------------------------------------------------------------------------------------------------------
-add_subdirectory(fls_benchmarks)
 add_subdirectory(fls_generated)
 #[[===================================================================================================================]]
+
+set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install")
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/fls_generated/include/fls_gen DESTINATION include)
+install(
+        TARGETS
+        fallback_scalar_nav_1024_uf1_rsum
+        fallback_unit64_nav_1024_uf1_rsum
+        x86_64_sse_intrinsic_1024_uf1_rsum
+        x86_64_avx2_intrinsic_1024_uf1_rsum
+        x86_64_avx512bw_intrinsic_1024_uf1_rsum
+        EXPORT rsumTargets
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib
+        RUNTIME DESTINATION run
+        INCLUDES DESTINATION include
+)
+install(EXPORT rsumTargets
+        FILE rsumTargets.cmake
+        NAMESPACE rsum::
+        DESTINATION lib/cmake/rsum
+)

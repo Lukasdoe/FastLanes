@@ -1,0 +1,149 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"fls_generated/include/fls_gen"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"fls_generated/fallback/scalar_nav_uf1/libfallback_scalar_nav_1024_uf1_rsum.a"
+			],
+			"targetId" : "fallback_scalar_nav_1024_uf1_rsum::@2230a42d579df4328175",
+			"targetIndex" : 57,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"fls_generated/fallback/unit64_nav_uf1/libfallback_unit64_nav_1024_uf1_rsum.a"
+			],
+			"targetId" : "fallback_unit64_nav_1024_uf1_rsum::@30e145b002111b60b9bc",
+			"targetIndex" : 63,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"fls_generated/x86_64/sse_intrinsic_uf1/libx86_64_sse_intrinsic_1024_uf1_rsum.a"
+			],
+			"targetId" : "x86_64_sse_intrinsic_1024_uf1_rsum::@62cd4c9516848a6efef4",
+			"targetIndex" : 98,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"fls_generated/x86_64/avx2_intrinsic_uf1/libx86_64_avx2_intrinsic_1024_uf1_rsum.a"
+			],
+			"targetId" : "x86_64_avx2_intrinsic_1024_uf1_rsum::@cdc79f86b686f6803a8c",
+			"targetIndex" : 80,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"fls_generated/x86_64/avx512bw_intrinsic_uf1/libx86_64_avx512bw_intrinsic_1024_uf1_rsum.a"
+			],
+			"targetId" : "x86_64_avx512bw_intrinsic_1024_uf1_rsum::@cf13834da01b7ba33dc7",
+			"targetIndex" : 89,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/rsum",
+			"exportName" : "rsumTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "fallback_scalar_nav_1024_uf1_rsum::@2230a42d579df4328175",
+					"index" : 57
+				},
+				{
+					"id" : "fallback_unit64_nav_1024_uf1_rsum::@30e145b002111b60b9bc",
+					"index" : 63
+				},
+				{
+					"id" : "x86_64_sse_intrinsic_1024_uf1_rsum::@62cd4c9516848a6efef4",
+					"index" : 98
+				},
+				{
+					"id" : "x86_64_avx2_intrinsic_1024_uf1_rsum::@cdc79f86b686f6803a8c",
+					"index" : 80
+				},
+				{
+					"id" : "x86_64_avx512bw_intrinsic_1024_uf1_rsum::@cf13834da01b7ba33dc7",
+					"index" : 89
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/972c26495ce5809df06001ecf2ed99f2/rsumTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

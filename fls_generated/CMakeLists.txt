@@ -5,6 +5,12 @@ define_property(GLOBAL PROPERTY FLS_ALL_BENCHMARK_TARGETS
 # Initialize property
 set_property(GLOBAL PROPERTY FLS_ALL_BENCHMARK_TARGETS "")
 
+if(POLICY CMP0135)
+	cmake_policy(SET CMP0135 NEW)
+	set(CMAKE_POLICY_DEFAULT_CMP0135 NEW)
+	set(DOWNLOAD_EXTRACT_TIMESTAMP ON)
+endif()
+
 # Macro for add values into the list
 macro(add_fls_benchmark var)
 	set_property(GLOBAL APPEND PROPERTY FLS_ALL_BENCHMARK_TARGETS "${var}")
@@ -47,11 +53,12 @@ endif()
 #            ${FLS_GENERATED_OBJECT_FILES}
 #            fls_generated.cpp)
 #-----------------------------------------------------------------------------------------------------------------------
-cmake_print_properties(
-		TARGETS fls_generated
-		PROPERTIES COMPILE_DEFINITIONS
-		PROPERTIES COMPILE_OPTIONS
-		PROPERTIES COMPILE_FEATURES)
+# Disabled - there is no target called "fls_generated"
+#cmake_print_properties(
+#		TARGETS fls_generated
+#		PROPERTIES COMPILE_DEFINITIONS
+#		PROPERTIES COMPILE_OPTIONS
+#		PROPERTIES COMPILE_FEATURES)
 #-----------------------------------------------------------------------------------------------------------------------
 get_property(BENCHMARK_LIST GLOBAL PROPERTY FLS_ALL_BENCHMARK_TARGETS)
 message(STATUS "BENCHMARK LIST: ${BENCHMARK_LIST}")

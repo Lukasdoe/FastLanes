@@ -1,0 +1,5 @@
+if(EXISTS "/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/fallback/unit64_nav_uf1/fallback_unit64_nav_1024_uf1_rsum_test[1]_tests.cmake")
+  include("/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/fallback/unit64_nav_uf1/fallback_unit64_nav_1024_uf1_rsum_test[1]_tests.cmake")
+else()
+  add_test(fallback_unit64_nav_1024_uf1_rsum_test_NOT_BUILT fallback_unit64_nav_1024_uf1_rsum_test_NOT_BUILT)
+endif()

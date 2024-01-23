@@ -1,4 +1,4 @@
-add_library(fallback_unit64_nav_1024_uf1_rsum OBJECT
+add_library(fallback_unit64_nav_1024_uf1_rsum STATIC
             fallback_unit64_nav_1024_uf1_rsum_src.cpp)
 target_compile_definitions(fallback_unit64_nav_1024_uf1_rsum PRIVATE IS_SCALAR)
 set(FLAG -fno-slp-vectorize -fno-vectorize)

@@ -1,4 +1,4 @@
-add_library(x86_64_sse_intrinsic_1024_uf1_rsum OBJECT
+add_library(x86_64_sse_intrinsic_1024_uf1_rsum STATIC
             x86_64_sse_intrinsic_1024_uf1_rsum_src.cpp)
 target_compile_definitions(x86_64_sse_intrinsic_1024_uf1_rsum PRIVATE IS_SCALAR)
 set(FLAG -fno-builtin)

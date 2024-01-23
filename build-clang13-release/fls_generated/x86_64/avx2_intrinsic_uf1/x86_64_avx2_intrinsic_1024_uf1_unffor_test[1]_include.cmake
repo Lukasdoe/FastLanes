@@ -1,0 +1,5 @@
+if(EXISTS "/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/x86_64/avx2_intrinsic_uf1/x86_64_avx2_intrinsic_1024_uf1_unffor_test[1]_tests.cmake")
+  include("/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/x86_64/avx2_intrinsic_uf1/x86_64_avx2_intrinsic_1024_uf1_unffor_test[1]_tests.cmake")
+else()
+  add_test(x86_64_avx2_intrinsic_1024_uf1_unffor_test_NOT_BUILT x86_64_avx2_intrinsic_1024_uf1_unffor_test_NOT_BUILT)
+endif()

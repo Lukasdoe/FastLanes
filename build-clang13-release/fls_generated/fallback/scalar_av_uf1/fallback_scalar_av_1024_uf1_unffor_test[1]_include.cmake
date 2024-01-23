@@ -1,0 +1,5 @@
+if(EXISTS "/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/fallback/scalar_av_uf1/fallback_scalar_av_1024_uf1_unffor_test[1]_tests.cmake")
+  include("/tmp/tmp.1yHlT3tYfD/build-clang13-release/fls_generated/fallback/scalar_av_uf1/fallback_scalar_av_1024_uf1_unffor_test[1]_tests.cmake")
+else()
+  add_test(fallback_scalar_av_1024_uf1_unffor_test_NOT_BUILT fallback_scalar_av_1024_uf1_unffor_test_NOT_BUILT)
+endif()

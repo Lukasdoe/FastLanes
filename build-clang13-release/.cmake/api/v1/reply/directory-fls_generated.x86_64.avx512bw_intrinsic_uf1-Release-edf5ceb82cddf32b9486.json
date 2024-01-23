@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "fls_generated/x86_64/avx512bw_intrinsic_uf1",
+		"source" : "fls_generated/x86_64/avx512bw_intrinsic_uf1"
+	}
+}
