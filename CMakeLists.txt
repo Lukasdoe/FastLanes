@@ -38,3 +38,12 @@ include_directories(fls_generated/include)
 add_subdirectory(fls_benchmarks)
 add_subdirectory(fls_generated)
 #[[===================================================================================================================]]
+
+add_library(rust-bundle STATIC)
+target_link_libraries(rust-bundle PUBLIC
+    fallback_scalar_nav_1024_uf1_rsum
+    fallback_unit64_nav_1024_uf1_rsum
+    x86_64_sse_intrinsic_1024_uf1_rsum
+    x86_64_avx2_intrinsic_1024_uf1_rsum
+    x86_64_avx512bw_intrinsic_1024_uf1_rsum
+)
