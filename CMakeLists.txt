@@ -46,4 +46,5 @@ target_link_libraries(rust-bundle PUBLIC
     x86_64_sse_intrinsic_1024_uf1_rsum
     x86_64_avx2_intrinsic_1024_uf1_rsum
     x86_64_avx512bw_intrinsic_1024_uf1_rsum
+    fallback_scalar_av_1024_uf1_untranspose
 )
