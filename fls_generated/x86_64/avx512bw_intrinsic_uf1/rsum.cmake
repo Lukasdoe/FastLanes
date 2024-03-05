@@ -1,7 +1,8 @@
 add_library(x86_64_avx512bw_intrinsic_1024_uf1_rsum OBJECT
             x86_64_avx512bw_intrinsic_1024_uf1_rsum_src.cpp)
 target_compile_definitions(x86_64_avx512bw_intrinsic_1024_uf1_rsum PRIVATE IS_SCALAR)
-set(FLAG -mavx512bw -fno-builtin)
+set(FLAG -fno-builtin -mavx512bw -mavx2 -fvectorize -fslp-vectorize -ftree-vectorize)
+
 check_cxx_compiler_flag(${FLAG} HAS_FLAG)
 if(HAS_FLAG)
 else()

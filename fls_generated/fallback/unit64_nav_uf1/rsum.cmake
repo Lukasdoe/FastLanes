@@ -1,7 +1,7 @@
 add_library(fallback_unit64_nav_1024_uf1_rsum OBJECT
             fallback_unit64_nav_1024_uf1_rsum_src.cpp)
 target_compile_definitions(fallback_unit64_nav_1024_uf1_rsum PRIVATE IS_SCALAR)
-set(FLAG -fno-slp-vectorize -fno-vectorize)
+set(FLAG -mavx512bw -mavx2 -fvectorize -fslp-vectorize -ftree-vectorize)
 check_cxx_compiler_flag(${FLAG} HAS_FLAG)
 if(HAS_FLAG)
 else()
